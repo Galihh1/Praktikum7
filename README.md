@@ -185,17 +185,17 @@ def keluar():
 
 menu()
 ```
-**Penjelasan kodingan diatas**
+## Penjelasan kodingan diatas 
 ![image.png](screenshot/list.png)
-- Pertama kita import os nya menggunakan syntax 'from os import system' : pemanggilan fungsi dengan nama os system('cls') :
+# Pertama kita import os nya menggunakan syntax 'from os import system' : pemanggilan fungsi dengan nama os system('cls') :
  clearscreen pada command prompt anda. Memungkinkan kita mengimpor hanya satu definisi (fungsi)
  Lalu kita buat list kosong untuk di isi oleh tipe data yang sesuai dengan nama list tersebut.
  Contoh : nama = [] , list tersebut akan kita gunakan untuk menampung data yang berisi nama yang diinput
 ![image.png](screenshot/head.png)
-- Jika kita ingin membuat judul dan judul tersebut bisa kita panggil setiap saat, maka kita memakai fungsi def <nama_fungsi>
+# Jika kita ingin membuat judul dan judul tersebut bisa kita panggil setiap saat, maka kita memakai fungsi def <nama_fungsi>
  seperti contoh gambar diatas menggunakan fungsi `def head()`. Jika nanti kita ingin memanggil fungsi def diatas, cukup menggunakan kodinga `head()`
 ![image.png](screenshot/menu.png)
-- selanjutnya buat fungsi def menu() 
+# selanjutnya buat fungsi def menu() 
  Didalam fungsi def menu, gunakan perulangan `if elif else` untuk pemberian opsi pilihan
  bagi pengguna apa yang akan di inputkan. Dan berilah tujuan apa yang diinputkan, contoh :
  if pilih2 == 't':
@@ -204,25 +204,25 @@ menu()
         ubah()
  Artinya, jika kita mengetikkan 't' maka akan menuju ke def tambah() 
 ![image.png](screenshot/tambah.png)
-- Setelah pembuatan menu, buatlah pilihan fungsi def tambah()
+# Setelah pembuatan menu, buatlah pilihan fungsi def tambah()
  Didalam fungsi def tambah itu pengimputan semua data-data seperti nama, nim, tugas, uts, uas bahkan total nilai
  Apa yang kita inputkan otomatis ditambahkan ke list nya masing masing, contoh : diawal kita sudah inputkan list kosong
  dengan nama `d_nim` list ketika dalam penginputan akan disimpan di list tersebut menggunakan syntax `d_nim.append`
 ![image.png](screenshot/ubah.png)
-- Lanjut membuat fungsi def lainnya, seperti fungsi def ubah()
+# Lanjut membuat fungsi def lainnya, seperti fungsi def ubah()
  Fungsi def ubah() bertugas untuk merubah data yang sudah diinputkan tadi, jika pengguna belum menginputkan data sama sekali
  maka di fungsi def ubah() ini tidak akan bisa menemukan data tersebut. Mekanismenya dalam fungsi ini adalah merubah data yang sudah diinputkan dan disimpan di list yang sama dengan datanya namun diberi parameter *(sebutan nilai untuk inputan fungsi pada saat fungsi tersebut di definisikan)* data akan dimasukkan ke list yang sama namun di beri parameter [i], contoh semula d_nim[] maka untuk data yang baru akan dimasukan ke d_nim[i]
 ![image.png](screenshot/lihat.png)
-- Lalu setelah membuat fungsi def menu, def tambah, def ubah
+# Lalu setelah membuat fungsi def menu, def tambah, def ubah
  Tambahkan fungsi def lihat() fungsinya untuk menampilkan data yang sudah diinputkan tadi, memanggilnya dengan cara `for i in range(len(d_nim))` yang artinya untuk `i` dalam jangkauan (len(d_nim)), len() digunakan untuk mengetahui panjang (jumlah item atau anggota) dari objek
 ![image.png](screenshot/hapus.png)
-- Tambahkan fungsi def hapus() untuk penghapusan data yang sudah diinputkan
+# Tambahkan fungsi def hapus() untuk penghapusan data yang sudah diinputkan
  Di dalam fungsi def hapus() ketika kita ingin mencari data yang akan dihapus yaitu memanggilnya dengan cara yang sama `for i in range(len(d_nama))` setelahnya masukan list yang akan dihapus dan dibelakang list tersebut gunakan metode remove, contoh untuk menghapus list d_nim[] : d_nim.remove(d_nim[i])
 ![image.png](screenshot/cari.png)
-- Untuk mencari data, tambahkan fungsi def cari()
+# Untuk mencari data, tambahkan fungsi def cari()
  Di dalam fungsi def cari() yaitu untuk mencari data yang akan dicari memanggilnya menggunakan dengan cara yang sama seperti sebelumnya yaitu `for i in range(len(d_nim)) logikanya ketika kita mencari data berdasarkan nim maka akan muncul sesuai data yang ada nim tersebut
 ![image.png](screenshot/keluar.png)
-- Tahapan terakhir untuk keluar dari program, tambahkan fungsi def keluar()
+# Tahapan terakhir untuk keluar dari program, tambahkan fungsi def keluar()
  Di dalam fungsi ini tidak ada banyak syntax karna tujuan utamanya untuk keluar dari program, namun ada yang harus di perhatikan disini
  dibagian paling akhir atau bawah harus ada penutup dari menu, jika tidak maka ketika pengguna memanggi fungsi yang lain tidak akan
  terpanggil karna dibagian akhir kodingan tidak ada penutup. Maka kita tutup dengan syntax menu().
@@ -251,4 +251,3 @@ menu()
 
 7. Keluar dari Program
  ![image.png](screenshot/ss7.png)
- 
